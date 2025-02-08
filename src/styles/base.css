@@ -1,0 +1,12 @@
+@tailwind base;
+
+@font-face {
+  font-family: 'Satoshi'; /* Changed font-family to 'Satoshi' */
+  font-weight: 300 700; /* Adjust font-weight range based on Satoshi font file, common range for variable fonts */
+  font-display: swap; /* Changed to 'swap' for better perceived performance, you can keep 'block' if you prefer */
+  font-style: normal;
+  src: url('../fonts/Satoshi-Variable.woff2') format('woff2-variations'); /* Updated URL and format */
+}
+
+@tailwind components;
+@tailwind utilities;

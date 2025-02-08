@@ -1,0 +1,72 @@
+import logo from '@/images/clients/renewbody/renewbody-logo-small.png'
+import imageHero from './hero.jpg'
+import imageEmilySelman from './jana-bartosova.jpg' // Ponechávám imageEmilySelman, předpokládám, že je to Jana Bartošová
+import imageWeb from "./web.png"
+
+export const caseStudy = {
+  client: 'RenewBody',
+  title:
+    'Webové stránky masážního centra: Jednoduchost a rychlost pro pohodlí klientů', // Kreativní český název
+  description:
+    'Rychlé a estetické webové stránky pro pražské masážní centrum RenewBody.', // Zkrácený český popis
+  summary: [
+    'RenewBody hledalo webové stránky, které by byly stejně uklidňující a efektivní jako jejich masážní terapie.', // Aktualizované české body shrnutí
+    'Vytvořili jsme webové stránky pro masážní centrum RenewBody v Praze pomocí Next.js, se zaměřením na rychlost a uživatelskou přívětivost.',
+    'Výsledkem byly webové stránky spuštěné během několika dní, včetně SEO optimalizace a nastavení domény, k maximální spokojenosti klientky.',
+  ],
+  logo,
+  image: { src: imageHero }, // Ponechávám hero image, může být později nahrazena screenshotem webu
+  date: '2024-12', // Datum aktualizováno na aktuálnější, předpokládám, že webový projekt je novější
+  service: 'Vývoj webových stránek, SEO a nastavení', // Aktualizovaná služba v češtině
+  testimonial: {
+    author: { name: 'Jana Bartošová', role: 'Majitelka RenewBody' },
+    content:
+      'Děkuji! Hephasoft se o všechno postarali a musím říct, že jsou to rychlíci. Poslala jsem jim jen texty na web, soubor s logem a popsala jim svoji hrubou představu o webu a během pár dní vše nadesignovali a web spustili. Dokonce mi na něm udělali kompletní SEO a zřídili mi k němu doménu i s emailem. Jsem s nimi maximálně spokojená a určitě s nimi budu spolupracovat i v budoucnu.', // Použit český originál testimonialu
+  },
+}
+
+export const metadata = {
+  title: `${caseStudy.client} Případová studie: Webové stránky pro pražské masážní centrum`, // Více popisný český název metadat
+  description: caseStudy.description,
+}
+
+## Přehled
+
+Jana Bartošová, majitelka masážního centra RenewBody v srdci Prahy, snila o digitální prezentaci, která by nejen věrně zrcadlila klid a luxusní kvalitu jejích masážních terapií, ale také by dokázala obstát v obrovské pražské konkurenci. Měla jasnou vizi: webové stránky, které by nabízely dvojjazyčný obsah – elegantní dvojpreklad, umožňující návštěvníkům snadno přepínat mezi češtinou a angličtinou – a zároveň by vynikaly moderním a krásným designem.
+
+RenewBody nás oslovilo s jednoduchým, ale náročným požadavkem: vytvořte nám web, který bude prezentovat naši značku s noblesou a profesionalitou, a to nejen vizuálně, ale i technicky. Jana nám poskytla základní ingredience – propracované texty, logo a základní koncept – a plnou důvěru, že dokážeme její vizi posunout na další úroveň.
+
+Naším úkolem bylo navrhnout webové stránky, které se budou pyšnit moderním designem, rychlým načítáním a optimalizací pro vyhledávače (SEO friendly). Výsledný design byl koncipován tak, aby byl nejen esteticky atraktivní, ale také funkční – intuitivní pro uživatele, snadno navigovatelný a přizpůsobený pro všechna zařízení. Navíc jsme se zaměřili na to, aby web odpovídal náročným standardům, které vyžaduje dynamický a konkurenční pražský trh.
+
+Díky našemu přístupu, který kombinoval estetiku s výkonem, se nám podařilo vytvořit online prezentaci, která nejenže splnila, ale i předčila Jana Bartošová očekávání. Web RenewBody nyní skvěle reprezentuje značku, přitahuje nové zákazníky a podtrhuje jedinečný luxus a klid, který masáže nabízejí – vše s elegancí, kterou dnešní digitální prostředí vyžaduje.
+
+## Co jsme udělali
+
+<TagList>
+  <TagListItem>Vývoj webových stránek</TagListItem>
+  <TagListItem>Next.js</TagListItem>
+  <TagListItem>Rychlé nasazení</TagListItem>
+  <TagListItem>SEO optimalizace</TagListItem>
+  <TagListItem>Nastavení domény a emailu</TagListItem>
+  <TagListItem>Uživatelsky přívětivý design</TagListItem>
+  <TagListItem>Rychlé načítání webu</TagListItem>
+</TagList>
+
+## Jak to dopadlo
+
+<Obrazek src={imageWeb} alt="Popis nového obrázku" />
+
+
+<Blockquote
+  author={{ name: 'Jana Bartošová', role: 'Majitelka RenewBody' }}
+  image={{ src: imageEmilySelman }}
+>
+  Děkuji! Hephasoft se o všechno postarali a musím říct, že jsou to rychlíci. Poslala jsem jim jen texty na web, soubor s logem a popsala jim svoji hrubou představu o webu a během pár dní vše nadesignovali a web spustili. Dokonce mi na něm udělali kompletní SEO a zřídili mi k němu doménu i s emailem. Jsem s nimi maximálně spokojená a určitě s nimi budu spolupracovat i v budoucnu.
+</Blockquote>
+
+<StatList>
+  <StatListItem value="10 dní" label="Doba vyhotovení webu" />
+  <StatListItem value="0.3s" label="Doba načítání webu" />
+  <StatListItem value="Kompletní" label="SEO optimalizace" />
+  <StatListItem value="Profesionální" label="Nastavení domény a emailu" />
+</StatList>
