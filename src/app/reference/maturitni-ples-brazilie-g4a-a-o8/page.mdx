@@ -1,10 +1,10 @@
 import logo from '@/images/clients/maturak-brazilie/plakat_upscayled.png' // Keeping the logo import, although it might be irrelevant now, user can change it later
 import imageHero from './hero.png' // Keeping hero image import as well, user can replace
-import imageAdamKrivsky from './adam-krivsky.png' // Renamed imageJennyWilson to imageAdamKrivsky and import path, user needs to replace with Adam's image
+import imageAdamKrivsky from './adam-krivsky.jpeg' // Renamed imageJennyWilson to imageAdamKrivsky and import path, user needs to replace with Adam's image
 import adminImg from './admin.jpg'
-import frontendImg from "./frontend.png"
-import frontendImg2 from "./frontend2.png"
-
+import frontendImg from './frontend.png'
+import frontendImg2 from './frontend2.png'
+import seats from './seats.png'
 
 export const caseStudy = {
   client: 'Plesový výbor tříd G4A a O8',
@@ -32,25 +32,41 @@ export const metadata = {
   description: caseStudy.description,
 }
 
-
-
 ## Přehled
 
 Plesový výbor tříd G4A a O8 se na nás obrátil s naléhavou potřebou zefektivnit prodej lístků na maturitní ples. Původní prodejní metody, založené na ručním zápisu a papírových lístcích, už dávno neodpovídaly ambicióznímu cíli – během krátké doby bylo nutné prodat až <strong>1000 lístků</strong>. Tradiční přístupy totiž vyžadovaly spoustu času a energie, což znamenalo, že by se lístky nestihly prodat včas a hrozilo by, že akce ztratí na atraktivitě či dokonce dojde ke zmatkům v den plesu.
 
-<strong>Problém byl jasný:</strong> riziko, že by se vstupenky neprodaly dostatečně rychle, a tím pádem by nebylo možné udržet hladký průběh celé akce. Navíc manuální zpracování objednávek vedlo k častým chybám a komplikované administraci, což výrazně zatěžovalo plesový výbor a brzdilo celkovou organizaci.
+<strong>Problém byl jasný:</strong> riziko, že by se vstupenky neprodaly
+dostatečně rychle, a tím pádem by nebylo možné udržet hladký průběh celé akce.
+Navíc manuální zpracování objednávek vedlo k častým chybám a komplikované
+administraci, což výrazně zatěžovalo plesový výbor a brzdilo celkovou
+organizaci.
 
-<strong>Naším řešením</strong> bylo vytvořit moderní online rezervační portál, který by celý proces posunul na novou úroveň. Inspirovali jsme se úspěšnými systémy, jako je Ticket Portal, a vytvořili jsme intuitivní a uživatelsky přívětivé rozhraní, které umožňuje:
+<strong>Naším řešením</strong> bylo vytvořit moderní online rezervační portál,
+který by celý proces posunul na novou úroveň. Inspirovali jsme se úspěšnými
+systémy, jako je Ticket Portal, a vytvořili jsme intuitivní a uživatelsky
+přívětivé rozhraní, které umožňuje:
 
-<strong>Grafický plán sedadel:</strong> Uživatelé si mohou prohlédnout podrobný a přehledný plán sedadel. Tento vizuální přístup jim umožňuje vybrat si konkrétní místa podle vlastních preferencí, čímž se zvyšuje komfort nákupu.
+<strong>Grafický plán sedadel:</strong> Uživatelé si mohou prohlédnout podrobný
+a přehledný plán sedadel. Tento vizuální přístup jim umožňuje vybrat si
+konkrétní místa podle vlastních preferencí, čímž se zvyšuje komfort nákupu.
 
-<strong>Interaktivní výběr míst:</strong> Rezervace sedadel probíhá v reálném čase. Jakmile si návštěvník vybere sedadlo, okamžitě se označí jako rezervované, což předchází dvojímu prodeji a zajišťuje hladký průběh celého procesu.
+<strong>Interaktivní výběr míst:</strong> Rezervace sedadel probíhá v reálném
+čase. Jakmile si návštěvník vybere sedadlo, okamžitě se označí jako rezervované,
+což předchází dvojímu prodeji a zajišťuje hladký průběh celého procesu.
 
-<strong>Efektivní správa lístků:</strong> Administrace portálu nabízí přehledné nástroje pro správu zakoupených lístků. Plesový výbor tak má vždy aktuální přehled o všech objednávkách, může snadno řešit změny či storna a generovat potřebné přehledy.
+<strong>Efektivní správa lístků:</strong> Administrace portálu nabízí přehledné
+nástroje pro správu zakoupených lístků. Plesový výbor tak má vždy aktuální
+přehled o všech objednávkách, může snadno řešit změny či storna a generovat
+potřebné přehledy.
 
-<strong>Zabezpečení:</strong> Celý proces je podpořen moderními bezpečnostními opatřeními – od šifrovaných online plateb až po ochranu osobních údajů uživatelů. To zaručuje, že transakce proběhnou bezpečně a spolehlivě.
+<strong>Zabezpečení:</strong> Celý proces je podpořen moderními bezpečnostními
+opatřeními – od šifrovaných online plateb až po ochranu osobních údajů
+uživatelů. To zaručuje, že transakce proběhnou bezpečně a spolehlivě.
 
-<strong>Optimalizace pro rychlost:</strong> Portál byl navržen s ohledem na maximální rychlost načítání a responzivitu na všech zařízeních, což výrazně snižuje čekací doby a zajišťuje plynulý nákup i při vysoké návštěvnosti.
+<strong>Optimalizace pro rychlost:</strong> Portál byl navržen s ohledem na
+maximální rychlost načítání a responzivitu na všech zařízeních, což výrazně
+snižuje čekací doby a zajišťuje plynulý nákup i při vysoké návštěvnosti.
 
 ## Jak jsme postupovali?
 
@@ -63,7 +79,7 @@ Nejprve jsme vytvořili jednoduchý, ale tematicky propracovaný frontend, kter�
 
 Dále jsme se zaměřili na vytvoření <strong>plánu sedadel</strong>. Vypracovali jsme detailní grafické znázornění sedadel, které bylo plně responzivní a snadno upravitelné. Tato funkcionalita umožnila návštěvníkům jednoduše si vybrat ideální místo, a to i při změnách uspořádání, které byly potřeba během samotného plánu akce.
 
-
+<Obrazek src={seats} alt="Frontend maturitní ples brazílie" />
 
 ## Administrace lístků
 
@@ -71,8 +87,7 @@ Nakonec jsme vyvinuli robustního <strong>administrátora na správu lístků</s
 
 <Obrazek src={adminImg} alt="Frontend maturitní ples brazílie" />
 
-
-## 
+##
 
 ## Co jsme udělali
 
