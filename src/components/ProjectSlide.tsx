@@ -5,7 +5,7 @@ const featuredTestimonial = {
   author: {
     name: 'Adam Křivský',
     handle: 'adamkrivsky',
-    imageUrl: '@/images/adam-krivsky.jpeg',
+    imageUrl: '/adam-krivsky.jpeg',
     logoUrl: '/plakat_upscayled.png',
   },
 }
@@ -69,7 +69,7 @@ function classNames(...classes: (string | false | null | undefined)[]): string {
 
 export default function Example() {
   return (
-    <div className="relative isolate bg-white pb-32 pt-24 sm:pt-32">
+    <div className="relative isolate bg-white pb-16 pt-12 sm:pt-16">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm/6 text-accent sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4">
           <figure className="rounded-2xl bg-white shadow-lg ring-1 ring-accent/5 sm:col-span-2 xl:col-start-2 xl:row-end-1">
