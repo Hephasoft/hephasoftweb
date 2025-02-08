@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 const featuredTestimonial = {
   body: 'Integer id nunc sit semper purus. Bibendum at lacus ut arcu blandit montes vitae auctor libero. Hac condimentum dignissim nibh vulputate ut nunc. Amet nibh orci mi venenatis blandit vel et proin. Non hendrerit in vel ac diam.',
   author: {
@@ -67,7 +69,7 @@ function classNames(...classes: (string | false | null | undefined)[]): string {
 
 export default function Example() {
   return (
-    <div className="relative isolate max-w-7xl overflow-x-hidden bg-white pb-32 pt-24 sm:pt-32">
+    <div className="relative isolate mx-auto max-w-7xl overflow-x-hidden bg-white pb-32 pt-24 sm:pt-32">
       <div
         aria-hidden="true"
         className="absolute inset-x-0 top-1/2 -z-10 -translate-y-1/2 transform-gpu overflow-hidden opacity-30 blur-3xl"
@@ -77,7 +79,7 @@ export default function Example() {
             clipPath:
               'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
           }}
-          className="ml-[max(50%,38rem)] aspect-[1313/771] w-[82.0625rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc]"
+          className="ml-[max(50%,38rem)] aspect-[1313/771] w-[82.0625rem] bg-gradient-to-tr from-accent to-moonstone"
         />
       </div>
       <div
@@ -89,20 +91,22 @@ export default function Example() {
             clipPath:
               'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
           }}
-          className="ml-[-22rem] aspect-[1313/771] w-[82.0625rem] flex-none origin-top-right rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] xl:ml-0 xl:mr-[calc(50%-12rem)]"
+          className="ml-[-22rem] aspect-[1313/771] w-[82.0625rem] flex-none origin-top-right rotate-[30deg] bg-gradient-to-tr from-accent to-moonstone xl:ml-0 xl:mr-[calc(50%-12rem)]"
         />
       </div>
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm/6 text-gray-900 sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4">
-          <figure className="rounded-2xl bg-white shadow-lg ring-1 ring-gray-900/5 sm:col-span-2 xl:col-start-2 xl:row-end-1">
-            <blockquote className="p-6 text-lg font-semibold tracking-tight text-gray-900 sm:p-12 sm:text-xl/8">
+        <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm/6 text-accent sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4">
+          <figure className="rounded-2xl bg-white shadow-lg ring-1 ring-accent/5 sm:col-span-2 xl:col-start-2 xl:row-end-1">
+            <blockquote className="p-6 text-lg font-semibold tracking-tight text-accent sm:p-12 sm:text-xl/8">
               <p>{`“${featuredTestimonial.body}”`}</p>
             </blockquote>
-            <figcaption className="flex flex-wrap items-center gap-x-4 gap-y-4 border-t border-gray-900/10 px-6 py-4 sm:flex-nowrap">
-              <img
+            <figcaption className="flex flex-wrap items-center gap-x-4 gap-y-4 border-t border-accent/10 px-6 py-4 sm:flex-nowrap">
+              <Image
                 alt=""
                 src={featuredTestimonial.author.imageUrl}
                 className="size-10 flex-none rounded-full bg-gray-50"
+                width={40}
+                height={40}
               />
               <div className="flex-auto">
                 <div className="font-semibold">
@@ -110,10 +114,12 @@ export default function Example() {
                 </div>
                 <div className="text-gray-600">{`@${featuredTestimonial.author.handle}`}</div>
               </div>
-              <img
+              <Image
                 alt=""
                 src={featuredTestimonial.author.logoUrl}
                 className="h-10 w-auto flex-none"
+                width={40}
+                height={40}
               />
             </figcaption>
           </figure>
@@ -137,16 +143,18 @@ export default function Example() {
                   {column.map((testimonial) => (
                     <figure
                       key={testimonial.author.handle}
-                      className="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5"
+                      className="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-accent/5"
                     >
-                      <blockquote className="text-gray-900">
+                      <blockquote className="text-accent">
                         <p>{`“${testimonial.body}”`}</p>
                       </blockquote>
                       <figcaption className="mt-6 flex items-center gap-x-4">
-                        <img
+                        <Image
                           alt=""
                           src={testimonial.author.imageUrl}
                           className="size-10 rounded-full bg-gray-50"
+                          width={40}
+                          height={40}
                         />
                         <div>
                           <div className="font-semibold">
