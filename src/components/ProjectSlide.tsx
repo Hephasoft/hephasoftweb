@@ -72,15 +72,15 @@ export default function Example() {
     <div className="relative isolate bg-white pb-16 pt-12 sm:pt-16">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm/6 text-accent sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4">
-          <figure className="rounded-2xl bg-white shadow-lg ring-1 ring-accent/5 sm:col-span-2 xl:col-start-2 xl:row-end-1">
-            <blockquote className="p-6 text-lg font-semibold tracking-tight text-accent sm:p-12 sm:text-xl/8">
+          <figure className="rounded-2xl bg-moonstone shadow-lg ring-1 ring-accent/5 sm:col-span-2 xl:col-start-2 xl:row-end-1">
+            <blockquote className="p-6 text-lg font-semibold tracking-tight text-white sm:p-12 sm:text-xl/8">
               <p>{`“${featuredTestimonial.body}”`}</p>
             </blockquote>
             <figcaption className="flex flex-wrap items-center gap-x-4 gap-y-4 border-t border-accent/10 px-6 py-4 sm:flex-nowrap">
               <Image
                 alt=""
                 src={featuredTestimonial.author.imageUrl}
-                className="size-10 flex-none rounded-full bg-gray-50"
+                className="size-10 flex-none rounded-full bg-moonstone/50"
                 width={40}
                 height={40}
               />
@@ -88,15 +88,8 @@ export default function Example() {
                 <div className="font-semibold">
                   {featuredTestimonial.author.name}
                 </div>
-                <div className="text-gray-600">{`@${featuredTestimonial.author.handle}`}</div>
+                <div className="text-gray-200">{`@${featuredTestimonial.author.handle}`}</div>
               </div>
-              <Image
-                alt=""
-                src={featuredTestimonial.author.logoUrl}
-                className="h-10 w-auto flex-none"
-                width={40}
-                height={40}
-              />
             </figcaption>
           </figure>
           {testimonials.map((columnGroup, columnGroupIdx) => (
