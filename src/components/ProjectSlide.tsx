@@ -85,7 +85,7 @@ export default function Example() {
                 height={40}
               />
               <div className="flex-auto">
-                <div className="font-semibold">
+                <div className="font-semibold text-white">
                   {featuredTestimonial.author.name}
                 </div>
                 <div className="text-gray-200">{`@${featuredTestimonial.author.handle}`}</div>
