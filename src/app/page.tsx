@@ -219,9 +219,11 @@ export default async function Home() {
           </p>
           {/* Přidaná tlačítka pod popis */}
           <div className="mt-10 flex gap-4">
-            <button className="rounded-2xl bg-accent px-8 py-3 text-white hover:bg-accent/90">
-              Ukázky práce
-            </button>
+            <Link href="/reference">
+              <button className="rounded-2xl bg-accent px-8 py-3 text-white hover:bg-accent/90">
+                Ukázky práce
+              </button>
+            </Link>
           </div>
         </FadeIn>
       </Container>

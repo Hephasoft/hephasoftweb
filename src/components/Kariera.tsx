@@ -1,26 +1,27 @@
 // pages/kariera.tsx
-import type { NextPage } from 'next';
-import { CurrencyDollarIcon, DesktopComputerIcon } from '@heroicons/react/solid';
+import type { NextPage } from 'next'
+import { CurrencyDollarIcon, DesktopComputerIcon } from '@heroicons/react/solid'
 
 // Import komponent pro pozadí a animaci
-import { Container } from '@/components/Container';
-import { FadeIn } from '@/components/FadeIn';
-import { GridPattern } from '@/components/GridPattern';
+import { Container } from '@/components/Container'
+import { FadeIn } from '@/components/FadeIn'
+import { GridPattern } from '@/components/GridPattern'
+import Link from 'next/link'
 
 /**
  * Definice rozhraní pro pracovní pozici.
  */
 interface JobPosition {
-  title: string;
-  description: string;
-  tasksTitle: string;
-  tasks: string[];
-  requirementsTitle: string;
-  requirements: string[];
-  remote: string;        // Popis možnosti práce na dálku či home office
-  salary: string;        // Textový popis platu
-  salaryRange: string;   // Konkrétní platové rozmezí
-  link: string;          // Odkaz na kontaktní formulář či e-mail
+  title: string
+  description: string
+  tasksTitle: string
+  tasks: string[]
+  requirementsTitle: string
+  requirements: string[]
+  remote: string // Popis možnosti práce na dálku či home office
+  salary: string // Textový popis platu
+  salaryRange: string // Konkrétní platové rozmezí
+  link: string // Odkaz na kontaktní formulář či e-mail
 }
 
 /**
@@ -50,7 +51,7 @@ const jobPositions: JobPosition[] = [
     remote: 'Full remote',
     salary: 'Plat:',
     salaryRange: '60 000 - 90 000 CZK/měsíc',
-    link: 'mailto:hr@vasefirma.cz',
+    link: 'mailto:tomas@hephasoft.cz',
   },
   {
     title: 'Next.js + Tailwind Developer',
@@ -73,9 +74,9 @@ const jobPositions: JobPosition[] = [
     remote: 'Full remote',
     salary: 'Plat:',
     salaryRange: '50 000 - 70 000 CZK/měsíc',
-    link: 'mailto:hr@vasefirma.cz',
+    link: 'mailto:tomas@hephasoft.cz',
   },
-];
+]
 
 /**
  * Hlavní komponenta stránky Kariéra.
@@ -99,7 +100,8 @@ const KarieraPage: NextPage = () => {
             <div className="mb-16 text-center">
               <h2 className="text-4xl font-bold text-gray-800">Kariéra</h2>
               <p className="mt-2 text-lg text-gray-600">
-                Hledáme talentované lidi, kteří s námi budou posouvat digitální svět kupředu.
+                Hledáme talentované lidi, kteří s námi budou posouvat digitální
+                svět kupředu.
               </p>
             </div>
 
@@ -108,19 +110,25 @@ const KarieraPage: NextPage = () => {
               {jobPositions.map((job, index) => (
                 <div
                   key={index}
-                  className="rounded-2xl bg-accent py-16 px-6 shadow-sm transition duration-300 transform hover:scale-105"
+                  className="transform rounded-2xl bg-accent px-6 py-16 shadow-sm transition duration-300 hover:scale-105"
                 >
-                  <h3 className="mb-6 text-3xl font-semibold text-white">{job.title}</h3>
+                  <h3 className="mb-6 text-3xl font-semibold text-white">
+                    {job.title}
+                  </h3>
                   <p className="mb-8 text-sm text-white">{job.description}</p>
 
-                  <h4 className="mb-6 font-semibold text-white text-lg">{job.tasksTitle}</h4>
+                  <h4 className="mb-6 text-lg font-semibold text-white">
+                    {job.tasksTitle}
+                  </h4>
                   <ul className="mb-8 list-inside list-disc text-sm text-white">
                     {job.tasks.map((task, i) => (
                       <li key={i}>{task}</li>
                     ))}
                   </ul>
 
-                  <h4 className="mb-6 font-semibold text-white text-lg">{job.requirementsTitle}</h4>
+                  <h4 className="mb-6 text-lg font-semibold text-white">
+                    {job.requirementsTitle}
+                  </h4>
                   <ul className="mb-8 list-inside list-disc text-sm text-white">
                     {job.requirements.map((req, i) => (
                       <li key={i}>{req}</li>
@@ -128,23 +136,23 @@ const KarieraPage: NextPage = () => {
                   </ul>
 
                   {/* Sekce s informacemi o pracovní formě */}
-                  <div className="flex items-center mb-4 text-white">
-                    <DesktopComputerIcon className="w-5 h-5 mr-2" />
+                  <div className="mb-4 flex items-center text-white">
+                    <DesktopComputerIcon className="mr-2 h-5 w-5" />
                     <span className="font-semibold">{job.remote}</span>
                   </div>
-                  <div className="flex items-center mb-8 text-white">
-                    <CurrencyDollarIcon className="w-5 h-5 mr-2" />
+                  <div className="mb-8 flex items-center text-white">
+                    <CurrencyDollarIcon className="mr-2 h-5 w-5" />
                     <span className="font-semibold">
                       {job.salary} {job.salaryRange}
                     </span>
                   </div>
 
-                  <a
+                  <Link
                     href={job.link}
-                    className="inline-block rounded-2xl bg-white px-4 py-2 text-accent transition-colors hover:bg-accent-dark"
+                    className="inline-block rounded-2xl bg-white px-4 py-2 text-accent transition-colors hover:bg-white/90 hover:text-accent/90"
                   >
                     Odeslat životopis
-                  </a>
+                  </Link>
                 </div>
               ))}
             </div>
@@ -152,7 +160,7 @@ const KarieraPage: NextPage = () => {
         </FadeIn>
       </Container>
     </section>
-  );
-};
+  )
+}
 
-export default KarieraPage;
+export default KarieraPage

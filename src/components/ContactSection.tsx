@@ -14,7 +14,7 @@ export function ContactSection() {
             </h2>
             <div className="mt-6 flex">
               <Button href="/kontakt" invert>
-                Napsat nám
+                Napište nám
               </Button>
             </div>
             <div className="mt-10 border-t border-accent/70 pt-10">

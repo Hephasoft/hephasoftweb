@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 import { FaUsers, FaShoppingCart, FaGlobe, FaMobileAlt } from 'react-icons/fa'
 
@@ -22,7 +23,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
       <div className="max-w-md">
         <h3 className="mb-2 text-xl font-semibold text-white">{title}</h3>
         <p className="mb-4 text-gray-200">{description}</p>
-       {/* <button className="flex items-center font-medium text-white transition-colors hover:underline">
+        {/* <button className="flex items-center font-medium text-white transition-colors hover:underline">
           Ukázky práce
           <span className="ml-2">&#8594;</span>
         </button>
@@ -44,7 +45,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
 
 const ServiceSection: React.FC = () => {
   return (
-    <section className="mx-auto max-w-7xl px-4 py-8 ">
+    <section className="mx-auto max-w-7xl px-4 py-8">
       {/* Grid kontejner s 2 sloupci, kde větší horizontální mezera */}
       <div className="grid grid-cols-1 items-stretch gap-x-16 gap-y-8 md:grid-cols-2">
         {/* Levý sloupec */}
@@ -64,9 +65,11 @@ const ServiceSection: React.FC = () => {
             </p>
           </div>
           {/* Spodní tlačítko */}
-          <button className="w-80 rounded-lg bg-accent px-6 py-3 text-white shadow-md transition-colors hover:bg-[#25374A]">
-            Kontaktuje nás
-          </button>
+          <Link href="/kontakt">
+            <button className="w-80 rounded-lg bg-accent px-6 py-3 text-white shadow-md transition-colors hover:bg-[#25374A]">
+              Kontaktuje nás
+            </button>
+          </Link>
         </div>
 
         {/* Pravý sloupec – kartičky služeb */}
