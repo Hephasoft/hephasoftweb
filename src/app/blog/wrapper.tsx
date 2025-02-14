@@ -32,9 +32,7 @@ export default async function BlogArticleWrapper({
             >
               {formatDate(article.date)}
             </time>
-            <p className="mt-6 text-sm font-semibold text-accent">
-              {article.author.name}, {article.author.role}
-            </p>
+           
           </header>
         </FadeIn>
 

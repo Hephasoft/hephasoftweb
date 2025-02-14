@@ -48,22 +48,7 @@ export default async function Blog() {
                             {formatDate(article.date)}
                           </time>
                         </dd>
-                        <dt className="sr-only">Autor</dt>
-                        <dd className="mt-6 flex gap-x-4">
-                          <div className="flex-none overflow-hidden rounded-xl bg-neutral-100">
-                            <Image
-                              alt=""
-                              {...article.author.image}
-                              className="h-12 w-12 object-cover grayscale transition-all duration-500 group-hover:grayscale-0"
-                            />
-                          </div>
-                          <div className="text-sm text-accent">
-                            <div className="font-semibold">
-                              {article.author.name}
-                            </div>
-                            <div>{article.author.role}</div>
-                          </div>
-                        </dd>
+                        
                       </dl>
                       <p className="mt-6 max-w-2xl text-base text-accent/60">
                         {article.description}
