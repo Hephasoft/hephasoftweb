@@ -17,7 +17,7 @@ const testimonials = [
         author: {
           name: 'Jana Bartošová',
           handle: 'jancifoto',
-          imageUrl: '/images/team/img_Martina-Cerna.png',  
+          imageUrl: '/images/img_Martina-Cerna.png',  
               },
       },
       // More testimonials...
