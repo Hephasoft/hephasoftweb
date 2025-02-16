@@ -17,17 +17,17 @@ const testimonials = [
         author: {
           name: 'Jana Bartošová',
           handle: 'jancifoto',
-          imageUrl: '/jana-bartosova.jpeg',
-        },
+          imageUrl: '/images/team/img_Martina-Cerna.png',  
+              },
       },
       // More testimonials...
     ],
     [
       {
-        body: 'Aut reprehenderit voluptatem eum asperiores beatae id. Iure molestiae ipsam ut officia rem nulla blanditiis.',
+        body: 'Nechali jsme si vytvořit CRM na míru, které nám umožnilo lépe spravovat zákaznické vztahy a zefektivnit interní procesy. Precizní práce a skvělá komunikace.',
         author: {
-          name: 'Lindsay Walton',
-          handle: 'lindsaywalton',
+          name: 'Václav Horáček',
+          handle: 'vaclavhoracek',
           imageUrl: '/adam-krivsky.jpeg',
 
         },
@@ -38,11 +38,11 @@ const testimonials = [
   [
     [
       {
-        body: 'Voluptas quos itaque ipsam in voluptatem est. Iste eos blanditiis repudiandae. Earum deserunt enim molestiae ipsum perferendis recusandae saepe corrupti.',
+        body: 'Měli jsme eshop, se kterým jsme nebyli nikde úplně spokojeni a báli jsme se velké změny, ale HephaSoft nás provedl celým procesem. Já jsem s tím měl naprosto minimální práci. Po vytvoření jsme absolvovali školení, kde nás se vším naučili a i teď, když potřebuji pomoc, reagují rychle a ochotně.',
         author: {
-          name: 'Tom Cook',
-          handle: 'tomcook',
-          imageUrl: '/adam-krivsky.jpeg',
+          name: 'Eliška Řezníčková',
+          handle: 'eliskareznickova',
+          imageUrl: '',
 
         },
       },
@@ -50,10 +50,10 @@ const testimonials = [
     ],
     [
       {
-        body: 'Molestias ea earum quos nostrum doloremque sed. Quaerat quasi aut velit incidunt excepturi rerum voluptatem minus harum.',
+        body: 'Nový web, který nám dali, působí moderně a přitažlivě. Celý proces spolupráce byl velmi osobní a transparentní, díky čemuž jsme dostali přesně to, co jsme hledali. Ocenili jsme jejich kreativitu a pečlivý přístup.',
         author: {
-          name: 'Leonard Krasner',
-          handle: 'leonardkrasner',
+          name: 'Martina Černá',
+          handle: 'martinacerna',
           imageUrl: '/adam-krivsky.jpeg',
 
         },
