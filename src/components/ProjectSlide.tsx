@@ -1,4 +1,6 @@
+'use client'
 import Image from 'next/image'
+import { motion } from 'framer-motion'
 
 const featuredTestimonial = {
   body: 'S rezervační aplikací od Hephasoftu a jejich marketingovou pomocí se nám podařilo prodat neuvěřitelné množství lístků na ples. Aplikace fungovala skvěle a marketing na sítích zasáhl obrovské množství lidí organicky. Jsme nadšení z výsledků!',
@@ -17,8 +19,8 @@ const testimonials = [
         author: {
           name: 'Jana Bartošová',
           handle: 'jancifoto',
-          imageUrl: '/images/img_Martina-Cerna.png',  
-              },
+          imageUrl: '/jana-bartosova.png',
+        },
       },
       // More testimonials...
     ],
@@ -28,8 +30,7 @@ const testimonials = [
         author: {
           name: 'Václav Horáček',
           handle: 'vaclavhoracek',
-          imageUrl: '/adam-krivsky.jpeg',
-
+          imageUrl: '/img_Vaclav-Horacek.png',
         },
       },
       // More testimonials...
@@ -42,8 +43,7 @@ const testimonials = [
         author: {
           name: 'Eliška Řezníčková',
           handle: 'eliskareznickova',
-          imageUrl: '',
-
+          imageUrl: '/img_Eliska-Reznickova.png',
         },
       },
       // More testimonials...
@@ -54,8 +54,7 @@ const testimonials = [
         author: {
           name: 'Martina Černá',
           handle: 'martinacerna',
-          imageUrl: '/adam-krivsky.jpeg',
-
+          imageUrl: '/img_Martina-Cerna.png',
         },
       },
       // More testimonials...
@@ -69,10 +68,17 @@ function classNames(...classes: (string | false | null | undefined)[]): string {
 
 export default function Example() {
   return (
-    <div className="relative isolate bg-white pb-16 pt-12 sm:pt-16">
+    <div className="relative isolate bg-white pb-6 pt-12 sm:pt-16 lg:pb-16">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm/6 text-accent sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4">
-          <figure className="rounded-2xl bg-moonstone shadow-lg ring-1 ring-accent/5 sm:col-span-2 xl:col-start-2 xl:row-end-1">
+          {/* Featured Testimonial */}
+          <motion.figure
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.5 }}
+            className="rounded-2xl bg-moonstone shadow-lg ring-1 ring-accent/5 sm:col-span-2 xl:col-start-2 xl:row-end-1"
+          >
             <blockquote className="p-6 text-lg font-semibold tracking-tight text-white sm:p-12 sm:text-xl/8">
               <p>{`“${featuredTestimonial.body}”`}</p>
             </blockquote>
@@ -91,7 +97,8 @@ export default function Example() {
                 <div className="text-gray-200">{`@${featuredTestimonial.author.handle}`}</div>
               </div>
             </figcaption>
-          </figure>
+          </motion.figure>
+          {/* Testimonials Grid */}
           {testimonials.map((columnGroup, columnGroupIdx) => (
             <div
               key={columnGroupIdx}
@@ -110,8 +117,12 @@ export default function Example() {
                   )}
                 >
                   {column.map((testimonial) => (
-                    <figure
+                    <motion.figure
                       key={testimonial.author.handle}
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true, amount: 0.2 }}
+                      transition={{ duration: 0.5 }}
                       className="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-accent/5"
                     >
                       <blockquote className="text-accent">
@@ -121,7 +132,7 @@ export default function Example() {
                         <Image
                           alt=""
                           src={testimonial.author.imageUrl}
-                          className="size-10 rounded-full bg-gray-50"
+                          className="size-10 rounded-full bg-gray-50 object-cover object-center"
                           width={40}
                           height={40}
                         />
@@ -132,7 +143,7 @@ export default function Example() {
                           <div className="text-gray-600">{`@${testimonial.author.handle}`}</div>
                         </div>
                       </figcaption>
-                    </figure>
+                    </motion.figure>
                   ))}
                 </div>
               ))}

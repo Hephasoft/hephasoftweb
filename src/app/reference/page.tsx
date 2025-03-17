@@ -19,7 +19,6 @@ import logoRenewBody from '@/images/clients/renewbody/renewbody-logo-all-white.p
 import logoPenefDark from '@/images/clients/renewbody/renew-body-logo-transparent.png'
 import logoPenefLight from '@/images/clients/penef/penef-all-white.png'
 import logoPropopulace from '@/images/clients/propopulace/propopulacelogowhite.png'
-import imageLaptop from '@/images/laptop.jpg'
 import logoDreampro from '@/images/clients/dreampro/DreamproLogoWhite.png'
 import logoMujbiom from '@/images/clients/mujbiom/MujbiomLogo.png'
 import logoVektoring from '@/images/clients/vektoring/vektoringLogo.png'
@@ -137,8 +136,6 @@ const clients: Array<[string, string | StaticImageData]> = [
   ['Ask-me', logoAskme],
 ]
 
-
-
 export const metadata: Metadata = {
   title: 'Naše práce',
   description:
@@ -172,7 +169,6 @@ export default async function Work() {
         lepší přehled o datech klientů. Oceňujeme jejich odbornost a proaktivní
         přístup.
       </Testimonial>
-
 
       <ContactSection />
     </>
