@@ -6,17 +6,13 @@ import Link from 'next/link'
 import { ContactSection } from '@/components/ContactSection'
 import { Container } from '@/components/Container'
 import { FadeIn, FadeInStagger } from '@/components/FadeIn'
-import { List, ListItem } from '@/components/List'
 import { SectionIntro } from '@/components/SectionIntro'
-import { StylizedImage } from '@/components/StylizedImage'
 import { Testimonial } from '@/components/Testimonial'
 import logoRenewBody from '@/images/clients/renewbody/renewbody-logo-all-white.png'
 import logoPenefDark from '@/images/clients/renewbody/renew-body-logo-transparent.png'
 import logoPenefLight from '@/images/clients/penef/penef-all-white.png'
 import logoPropopulace from '@/images/clients/propopulace/Wpropopulace.svg'
-import imageLaptop from '@/images/laptop.jpg'
 import logoDreampro from '@/images/clients/dreampro/WDreampro.svg'
-import logoMujbiom from '@/images/clients/mujbiom/WMujbiom.svg'
 import logoVektoring from '@/images/clients/vektoring/Wvektoring.svg'
 import logoFdrive from '@/images/clients/fdrive/WFdrive.svg'
 import logoAskme from '@/images/clients/askme/WAskme.svg'
@@ -24,6 +20,8 @@ import { type CaseStudy, type MDXEntry, loadCaseStudies } from '@/lib/mdx'
 import Service from '@/components/Service'
 import Kariera from '@/components/Kariera'
 import Timeline from '@/components/Timeline'
+import logoVesuf from '@/images/clients/vesuf/vesuf-logo.png'
+import logoTlakovkaUsti from '@/images/clients/tlakovka-usti/tlakovka-usti-logo.svg'
 
 // Import klientské komponenty (s direktivou "use client")
 import TypewriterAnimation from '@/components/TypewriterAnimation'
@@ -36,6 +34,8 @@ const clients = [
   ['Vektoring', logoVektoring],
   ['Fdrive', logoFdrive],
   ['Ask-me', logoAskme],
+  ['Vesuf', logoVesuf],
+  ['Tlakovka Ústí', logoTlakovkaUsti],
 ]
 
 function Clients() {
