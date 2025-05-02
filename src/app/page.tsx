@@ -20,7 +20,7 @@ import Service from '@/components/Service'
 import Kariera from '@/components/Kariera'
 import Timeline from '@/components/Timeline'
 import logoVesuf from '@/images/clients/vesuf/vesuf-logo.png'
-import logoElimon from "@/images/clients/elimon/ElimonLogo.png"
+import logoElimon from '@/images/clients/elimon/ElimonLogo.png'
 
 // Import klientské komponenty (s direktivou "use client")
 import TypewriterAnimation from '@/components/TypewriterAnimation'
@@ -29,10 +29,10 @@ const clients = [
   ['Penef', logoPenefLight],
   ['RenewBody', logoRenewBody],
   ['DreamPro', logoDreampro],
-    ["Elimon", logoElimon],
+  ['Elimon', logoElimon],
 
   ['Vektoring', logoVektoring],
-  
+
   ['Fdrive', logoFdrive],
   ['Ask-me', logoAskme],
   ['Vesuf', logoVesuf],
@@ -49,26 +49,30 @@ function Clients() {
           <div className="h-px flex-auto bg-accent/80" />
         </FadeIn>
         <FadeInStagger faster>
-        <ul role="list" className="mt-10 grid grid-cols-2 gap-x-8 gap-y-10 lg:grid-cols-4">
-  {clients.map(([client, logo]) => (
-    <li key={client} className="flex h-12 items-center justify-center">
-      <FadeIn>
-        <Image
-          src={logo}
-          alt={client}
-          className="max-h-48 w-auto object-contain"
-        />
-      </FadeIn>
-    </li>
-  ))}
-</ul>
-
+          <ul
+            role="list"
+            className="mt-10 grid grid-cols-2 gap-x-8 gap-y-10 lg:grid-cols-4"
+          >
+            {clients.map(([client, logo]) => (
+              <li
+                key={client}
+                className="flex h-12 items-center justify-center"
+              >
+                <FadeIn>
+                  <Image
+                    src={logo}
+                    alt={client}
+                    className="max-h-48 w-auto object-contain"
+                  />
+                </FadeIn>
+              </li>
+            ))}
+          </ul>
         </FadeInStagger>
       </Container>
     </div>
   )
 }
-
 
 function CaseStudies({
   caseStudies,
