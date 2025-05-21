@@ -22,6 +22,9 @@ import Kariera from '@/components/Kariera'
 import Timeline from '@/components/Timeline'
 import logoVesuf from '@/images/clients/vesuf/vesuf-logo.png'
 import logoTlakovkaUsti from '@/images/clients/tlakovka-usti/tlakovka-usti-logo.svg'
+import logoElimon from '@/images/clients/elimon/elimon-logo.svg'
+
+import logoDUK from '@/images/clients/duk/duk-logo.svg'
 
 // Import klientské komponenty (s direktivou "use client")
 import TypewriterAnimation from '@/components/TypewriterAnimation'
@@ -35,7 +38,8 @@ const clients = [
   ['Fdrive', logoFdrive],
   ['Ask-me', logoAskme],
   ['Vesuf', logoVesuf],
-  ['Tlakovka Ústí', logoTlakovkaUsti],
+  ['Elimon', logoElimon],
+  ['DÚK', logoDUK],
 ]
 
 function Clients() {
@@ -51,16 +55,19 @@ function Clients() {
         <FadeInStagger faster>
           <ul
             role="list"
-            className="mt-10 grid grid-cols-2 gap-x-8 gap-y-10 lg:grid-cols-4"
+            className="mt-10 grid grid-cols-2 place-items-center gap-x-8 gap-y-10 lg:grid-cols-4"
           >
             {clients.map(([client, logo]) => (
-              <li key={client} className="relative h-8 w-40">
+              <li
+                key={client}
+                className={`relative -my-10 h-36 w-36 lg:scale-150 ${client === 'Elimon' ? 'ml-4' : ''} `}
+              >
                 <FadeIn>
                   <Image
                     src={logo}
                     alt={client}
                     fill
-                    className="object-cover object-center"
+                    className="object-contain object-center"
                   />
                 </FadeIn>
               </li>
