@@ -11,7 +11,6 @@ import { Testimonial } from '@/components/Testimonial'
 import logoRenewBody from '@/images/clients/renewbody/renewbody-logo-all-white.png'
 import logoPenefDark from '@/images/clients/renewbody/renew-body-logo-transparent.png'
 import logoPenefLight from '@/images/clients/penef/penef-all-white.png'
-import logoPropopulace from '@/images/clients/propopulace/Wpropopulace.svg'
 import logoDreampro from '@/images/clients/dreampro/WDreampro.svg'
 import logoVektoring from '@/images/clients/vektoring/Wvektoring.svg'
 import logoFdrive from '@/images/clients/fdrive/WFdrive.svg'
@@ -32,9 +31,11 @@ import TypewriterAnimation from '@/components/TypewriterAnimation'
 const clients = [
   ['Penef', logoPenefLight],
   ['RenewBody', logoRenewBody],
-  ['Propopulace', logoPropopulace],
   ['DreamPro', logoDreampro],
+  ['Elimon', logoElimon],
+
   ['Vektoring', logoVektoring],
+
   ['Fdrive', logoFdrive],
   ['Ask-me', logoAskme],
   ['Vesuf', logoVesuf],
