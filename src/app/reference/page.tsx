@@ -71,6 +71,8 @@ function CaseStudies({
                         // Now the logo is normalized to a string URL.
                         src={getImageSource(caseStudy.logo)}
                         alt=""
+                        height={64}
+                        width={64}
                         className="h-16 w-16 flex-none"
                         unoptimized
                       />
@@ -155,12 +157,11 @@ export default async function Work() {
         </p>
       </PageIntro>
 
-      <ProjectSlide />
 
       <CaseStudies caseStudies={caseStudies} />
 
       <Testimonial
-        className="mt-24 sm:mt-32 lg:mt-40"
+        className="mt-24 hidden sm:mt-32 lg:mt-40"
         client={{ name: 'Penef', logo: logoPenefDark }}
       >
         Hephasoft nám pomohl s klíčovou integrací našeho e-mailového marketingu.
@@ -169,6 +170,7 @@ export default async function Work() {
         lepší přehled o datech klientů. Oceňujeme jejich odbornost a proaktivní
         přístup.
       </Testimonial>
+      <ProjectSlide />
 
       <ContactSection />
     </>
