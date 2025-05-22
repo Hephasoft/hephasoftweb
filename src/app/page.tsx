@@ -30,13 +30,11 @@ import TypewriterAnimation from '@/components/TypewriterAnimation'
 
 const clients = [
   ['Penef', logoPenefLight],
-  ['RenewBody', logoRenewBody],
   ['DreamPro', logoDreampro],
   ['Vektoring', logoVektoring],
   ['Fdrive', logoFdrive],
   ['Ask-me', logoAskme],
   ['Vesuf', logoVesuf],
-  ['Elimon', logoElimon],
   ['DÚK', logoDUK],
 ]
 
