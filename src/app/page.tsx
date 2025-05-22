@@ -20,7 +20,6 @@ import Service from '@/components/Service'
 import Kariera from '@/components/Kariera'
 import Timeline from '@/components/Timeline'
 import logoVesuf from '@/images/clients/vesuf/vesuf-logo.png'
-import logoTlakovkaUsti from '@/images/clients/tlakovka-usti/tlakovka-usti-logo.svg'
 import logoElimon from '@/images/clients/elimon/elimon-logo.svg'
 
 import logoDUK from '@/images/clients/duk/duk-logo.svg'
@@ -31,6 +30,7 @@ import TypewriterAnimation from '@/components/TypewriterAnimation'
 const clients = [
   ['Penef', logoPenefLight],
   ['DreamPro', logoDreampro],
+  ['Elimon', logoElimon],
   ['Vektoring', logoVektoring],
   ['Fdrive', logoFdrive],
   ['Ask-me', logoAskme],
