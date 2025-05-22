@@ -32,10 +32,7 @@ const clients = [
   ['Penef', logoPenefLight],
   ['RenewBody', logoRenewBody],
   ['DreamPro', logoDreampro],
-  ['Elimon', logoElimon],
-
   ['Vektoring', logoVektoring],
-
   ['Fdrive', logoFdrive],
   ['Ask-me', logoAskme],
   ['Vesuf', logoVesuf],
