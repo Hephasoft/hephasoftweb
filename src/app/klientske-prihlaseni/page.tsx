@@ -72,60 +72,45 @@ export default function Login() {
           <form onSubmit={handleLogin} className="space-y-6" noValidate>
             {errorMsg && <p className="text-sm text-red-600">{errorMsg}</p>}
 
-           <div>
-  {/* E-mail */}
-  <input
-    id="email-address"
-    name="email"
-    type="email"
-    value={email}
-    onChange={(e) => setEmail(e.target.value)}
-    required
-    placeholder="E-mail"
-    autoComplete="email"
-    aria-label="E-mail"
-    className="
-      block w-full 
-      bg-white px-3 py-1.5 text-base text-gray-900
-      border-b-2 border-gray-300
-      focus:outline-none focus:border-accent
-      placeholder:text-gray-400
-      sm:text-sm/6
-    "
-  />
+            <div>
+              {/* E-mail */}
+              <input
+                id="email-address"
+                name="email"
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
+                placeholder="E-mail"
+                autoComplete="email"
+                aria-label="E-mail"
+                className="block w-full border-b-2 border-gray-300 bg-white px-3 py-1.5 text-base text-gray-900 placeholder:text-gray-400 focus:border-accent focus:outline-none sm:text-sm/6"
+              />
 
-  {/* Heslo */}
-  <div className="relative mt-4">
-    <input
-      id="password"
-      name="password"
-      type={showPassword ? 'text' : 'password'}
-      value={password}
-      onChange={(e) => setPassword(e.target.value)}
-      required
-      placeholder="Heslo"
-      autoComplete="current-password"
-      aria-label="Heslo"
-      className="
-        block w-full 
-        bg-white px-3 py-1.5 text-base text-gray-900
-        border-b-2 border-gray-300
-        focus:outline-none focus:border-accent
-        placeholder:text-gray-400
-        sm:text-sm/6
-      "
-    />
-    <button
-      type="button"
-      onClick={togglePasswordVisibility}
-      className="absolute inset-y-0 right-0 flex items-center pr-3 text-gray-500"
-      aria-label={showPassword ? 'Hide password' : 'Show password'}
-    >
-      {showPassword ? <EyeClosed size={20} /> : <Eye size={20} />}
-    </button>
-  </div>
-</div>
-
+              {/* Heslo */}
+              <div className="relative mt-4">
+                <input
+                  id="password"
+                  name="password"
+                  type={showPassword ? 'text' : 'password'}
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  required
+                  placeholder="Heslo"
+                  autoComplete="current-password"
+                  aria-label="Heslo"
+                  className="block w-full border-b-2 border-gray-300 bg-white px-3 py-1.5 text-base text-gray-900 placeholder:text-gray-400 focus:border-accent focus:outline-none sm:text-sm/6"
+                />
+                <button
+                  type="button"
+                  onClick={togglePasswordVisibility}
+                  className="absolute inset-y-0 right-0 flex items-center pr-3 text-gray-500"
+                  aria-label={showPassword ? 'Hide password' : 'Show password'}
+                >
+                  {showPassword ? <EyeClosed size={20} /> : <Eye size={20} />}
+                </button>
+              </div>
+            </div>
 
             <div>
               <button
