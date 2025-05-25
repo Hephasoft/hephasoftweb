@@ -226,6 +226,11 @@ export default async function Home() {
                 Ukázky práce
               </button>
             </Link>
+            <Link href="/klientske-prihlaseni">
+              <button className="rounded-2xl border-2 font-black border-accent bg-transparent px-8 py-3 text-accent transition duration-200 ease-in-out hover:bg-accent/10">
+                Klientský portál
+              </button>
+            </Link>
           </div>
         </FadeIn>
       </Container>
